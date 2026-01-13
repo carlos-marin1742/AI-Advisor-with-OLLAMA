@@ -1,0 +1,16 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# MacOS files
+.DS_Store
+
+# Large Model files (Ollama)
+*.bin
+*.gguf
+
+# Logs
+*.log
