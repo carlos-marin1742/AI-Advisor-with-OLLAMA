@@ -1,4 +1,4 @@
-### AI Cover Letter Architect
+### AI Stock Advisor
 **Real-Time Technical Analysis Meets Local LLM Intelligence**
 **AI Stock Advisor** is a high-frequency market monitoring tool that bridges the gap between raw financial data and actionable intelligence. It tracks major tech stocks (Apple, Google, Microsoft) and the Dow Jones Index in real-time, calculates complex technical indicators, and leverages a local gemma3:1b model via Ollama to provide professional-grade trading insights every 5 minutes.
 
@@ -9,24 +9,36 @@
 ### 3. Technology Stack
 **- Languages:** Python 3.9+
 
-**- Web Framework:** Streamlit (realtime UI)
+**- Web Framework:** [Streamlit](https://streamlit.io/)(Real-time UI)
 
-**- Data Source:** yfinance (Yahoo Finance API).
+**- Data Source:** [yfinance](https://pypi.org/project/yfinance/)(Yahoo Finance API)
 
 **- Data Analysis:** Pandas & Numpy
 
-**- AI Engine:** Ollama 
+**- AI Engine:** [Ollama](https://ollama.com/) (Running gemma3:1b)
 
-**- PDF Processing:** 
+**- Scheduling:** [Schedule](https://pypi.org/project/schedule/)
 
 -------------------------------------------------------------------------------------------------------------------------------------
 
 ### 4. Prerequisites and Installation 
 **Prerequisites**
 
-**1. Python 3.10+** Installed on your machine
+**1. Install Ollama & gemini3:1b+** 
 
-**2. Google Gemini API Key** **Google Gemini API Key:** Obtain one for free at [Google AI Studio](https://aistudio.google.com/).
+This Project requires a local instance of Ollama to handle the AI analysis
+
+1. Download and install Ollama from [ollama.com](https://ollama.com/)
+
+2. Open your terminal and pull the model
+
+``bash
+Ollama run gemma3:1b
+
+```
+
+
+**2. Google Gemini API Key** **Google Gemini API Key:** 
 
 **Installation Steps**
 
