@@ -32,57 +32,50 @@ This Project requires a local instance of Ollama to handle the AI analysis
 
 2. Open your terminal and pull the model
 
-``bash
+```bash
 Ollama run gemma3:1b
 
 ```
 
 
-**2. Google Gemini API Key** **Google Gemini API Key:** 
+**2. Clone and Install Dependencies:** 
 
 **Installation Steps**
 
-**1. Clone The Repository**
+**1. Clone the repository**
 ```bash
-git clone https://github.com/carlos-marin1742/AI-cover-letter-generator.git
+git clone git@github.com:carlos-marin1742/AI-Advisor-with-OLLAMA.git
 ```
 
 **2. Install Dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
-**3. Configure Environment Variables:** Create ***.env*** file in the root directory
-```plaintext
-GOOGLE_API_KEY=your_actual_key_here
-```
+
 
 **4. Run the Server:**
+To  launch the advisor, you must use Streamlit CLI. Running the script via standard python will not utilize the UI correctly
 ```bash
-python app.py
+streamlit run stock-trader.py
 ```
 -------------------------------------------------------------------------------------------------------------------------------------
 
-### 5. Usage & Examples
-**1. Input:** Paste a Job Description from job board
+### 5. What happens next
+**1. Markey Sync:** The app fetches the latest 1-minute interval data for APPL, GOOG, MSFT, and ^DJI
 
-**2. Upload:** Select your resume
+**2. Live Updates:** Every 10 seconds, the "rolling window" updates with new simulated data points.
 
-**3. Generate:** Click "Generate Professional Letter" and watch AI architect your response
+**3. Technical Crunching:** The system calculates **RSI, Bollinger Bands**, and **EMA** on the fly.
 
-**4. Export:** Click the **Copy Text** Button to instantly save the results to your clipboard for use in your application
+**4. AI Broker Insight** Every 5 minutes the, AI generates a concise sentiment report based on the calculated momentum and volatility.
 
+**Sample App image**
 
-**Sample App images**
-
-**Inital Screen**
-![Initial Screen](./images/initial.png)
-**Uploading Resume and pasting Job Description**
-![Uploading Resume and Pasting JD](./images/PastingCoverLetter.png)
-**Cover Letter Generation**
-![Cover Letter Generation](./images/CoverLetter.png)
+**Running AI Stock Advisor Screen**
+![Initial Screen](./images/sample.png)
 
 
 ### 6. Contact and Support 
 **- Developer:** Carlos Marin
 
-**- Project Link:** [Github Link](https://github.com/carlos-marin1742/AI-cover-letter-generator/)
+**- Project Link:** [Github Link](https://github.com/carlos-marin1742/AI-Advisor-with-OLLAMA)
