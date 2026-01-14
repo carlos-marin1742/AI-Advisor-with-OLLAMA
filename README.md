@@ -1,5 +1,6 @@
 ### AI Stock Advisor
 **Real-Time Technical Analysis Meets Local LLM Intelligence**
+
 **AI Stock Advisor** is a high-frequency market monitoring tool that bridges the gap between raw financial data and actionable intelligence. It tracks major tech stocks (Apple, Google, Microsoft) and the Dow Jones Index in real-time, calculates complex technical indicators, and leverages a local gemma3:1b model via Ollama to provide professional-grade trading insights every 5 minutes.
 
 
